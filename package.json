@@ -1,7 +1,7 @@
 {
   "name": "spider.js",
   "description": "A tool to spider a website and check for any broken links resources load errors or script errors",
-  "version": "0.1.1",
+  "version": "0.0.0",
   "homepage": "https://github.com/arschmitz/spider.js",
   "author": {
     "name": "Alexander Schmitz",
@@ -35,6 +35,10 @@
     "grunt": "~0.4.5",
     "grunt-git-authors": "~1.2.0",
     "grunt-jscs": "0.6.2"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "spiderjs": "spider.js"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
