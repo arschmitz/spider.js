@@ -35,7 +35,7 @@ spider( {
 
 #### Command line
 ```
-spiderjs --url=http://example.com -ignore=error.html --redirectError=false
+spiderjs --url=http://example.com --ignore=error.html --redirectError=false
 ```
 
 ## Options
