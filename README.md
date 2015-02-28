@@ -1,6 +1,12 @@
 # spider.js
 #### A command line tool for crawling a webstite for dead links, permeant and or fatal redirects, resource load issues, and script errors. It is based on the casperJS navigation scripting and testing utility.
 
+## Usage
+
+```
+spiderjs --url=http://example.com [ options ]
+```
+
 ## Command line options
 
 #### --url ( Required )

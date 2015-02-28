@@ -38,7 +38,7 @@
   },
   "preferGlobal": "true",
   "bin": {
-    "spiderjs": "bin/spider"
+    "spiderjs": "bin/spider.js"
   },
   "peerDependencies": {
     "grunt": "~0.4.5"
