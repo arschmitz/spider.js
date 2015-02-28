@@ -36,7 +36,7 @@
     "grunt-git-authors": "~1.2.0",
     "grunt-jscs": "0.6.2"
   },
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "spiderjs": "bin/spider.js"
   },
