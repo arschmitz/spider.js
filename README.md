@@ -1,3 +1,6 @@
+[![NPM version](https://badge.fury.io/js/spider.js.png)](https://www.npmjs.com/package/spider.js)
+
+
 # spider.js
 #### A command line tool for crawling a webstite for dead links, permeant and or fatal redirects, resource load issues, and script errors. It is based on the casperJS navigation scripting and testing utility.
 
