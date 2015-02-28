@@ -2,54 +2,81 @@
 
 
 # spider.js
-#### A command line tool for crawling a webstite for dead links, permeant and or fatal redirects, resource load issues, and script errors. It is based on the casperJS navigation scripting and testing utility.
+#### A node module and command line tool for crawling a website for dead links, permanent and or fatal redirects, resource load issues, and script errors. It is based on the casperJS navigation scripting and testing utility.
 
 ## Usage
 
-```
-spiderjs --url=http://example.com [ options ]
+
+#### Node Module
+```js
+var spider = require( "spider.js" );
+
+spider( options );
 ```
 
-## Command line options
+#### Command line
+```
+spiderjs --url=http://example.com [, option1 ] [, option2 ]
+```
 
-#### --url ( Required )
+## Examples
+
+
+#### Node Module
+```js
+var spider = require( "spider.js" );
+
+spider( {
+	url: "http://example.com",
+	ignore: "error.html",
+	redirectError: false
+} );
+```
+
+#### Command line
+```
+spiderjs --url=http://example.com -ignore=error.html --redirectError=false
+```
+
+## Options
+
+#### url ( Required )
 Type: `String`
 Default value: `'http://localhost'`
 
 a valid url for a website. The url willThis url may be local or remote.
 
-
-#### --ignore
+#### ignore
 Type: `String`
 Default value: `''`
 
 A string that will be used to create a regex for excluding urls from being spidered.
-#### --output
+#### output
 Type: `String`
-Default value: `False`
+Default value: `false`
 
 A file to output test log and results too
 
-#### --clientError
+#### clientError
 Type: `Boolean`
-Default value: `True`
+Default value: `true`
 
 Wether or not to check 4XX Errors
 
-#### --redirectError
+#### redirectError
 Type: `Boolean`
-Default value: `True`
+Default value: `true`
 
 Wether or not to check 3XX Errors
 
-#### --resourceError
+#### resourceError
 Type: `Boolean`
-Default value: `True`
+Default value: `true`
 
 Wether or not to check resource Errors
 
-#### --scriptError
+#### scriptError
 Type: `Boolean`
-Default value: `True`
+Default value: `true`
 
 Wether or not to check script Errors
