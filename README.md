@@ -38,6 +38,19 @@ spider( {
 spiderjs --url=http://example.com --ignore=error.html --redirectError=false
 ```
 
+#### Gulp.js
+
+```js
+var spider = require( "spider.js" );
+
+gulp.task( "spider", function() {
+	spider( {
+		url: "http://localhost:8000",
+		ignore: "error.html"
+	} );
+} );
+```
+
 ## Options
 
 #### url ( Required )
