@@ -1,7 +1,7 @@
 {
   "name": "spider.js",
   "description": "A tool to spider a website and check for any broken links resources load errors or script errors",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "homepage": "https://github.com/arschmitz/spider.js",
   "author": {
     "name": "Alexander Schmitz",
