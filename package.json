@@ -28,10 +28,10 @@
     "test": "grunt test"
   },
   "dependencies": {
+    "duration": "~0.2.0",
     "casperjs": "n1k0/casperjs"
   },
   "devDependencies": {
-    "duration": "~0.2.0",
     "grunt": "~0.4.5",
     "grunt-git-authors": "~1.2.0",
     "grunt-contrib-jshint": "~0.8.0",
