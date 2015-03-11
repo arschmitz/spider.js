@@ -31,7 +31,6 @@
     "casperjs": "n1k0/casperjs"
   },
   "devDependencies": {
-    "jquery": "1.11.1",
     "grunt": "~0.4.5",
     "grunt-git-authors": "~1.2.0",
     "grunt-jscs": "0.6.2"
