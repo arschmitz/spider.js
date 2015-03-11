@@ -3,7 +3,7 @@ module.exports = function( options ) {
 		spawn = require( "child_process" ).spawn,
 		args = [ "test", __dirname + "/lib/tests.js" ];
 
-	for( option in options ) {
+	for ( option in options ) {
 		if ( options.hasOwnProperty( option ) ) {
 			args.push( "--" + option + "=" + options[ option ] );
 		}
@@ -16,10 +16,10 @@ module.exports = function( options ) {
 			stdio: "pipe"
 		}
 	);
-	spider.stdout.on( "data", function ( data ) {
+	spider.stdout.on( "data", function( data ) {
 		process.stdout.write( data );
 	});
-	spider.stderr.on( "data", function ( data ) {
+	spider.stderr.on( "data", function( data ) {
 		process.stderr.write( data );
 	});
 };
