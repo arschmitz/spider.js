@@ -1,5 +1,7 @@
-module.exports = function( options ) {
+module.exports = function( options, callback ) {
 	var option, spider,
+		startTime = new Date(),
+		duration = require( "duration" ),
 		spawn = require( "child_process" ).spawn,
 		args = [ "test", __dirname + "/lib/tests.js" ];
 
@@ -21,5 +23,12 @@ module.exports = function( options ) {
 	});
 	spider.stderr.on( "data", function( data ) {
 		process.stderr.write( data );
+	});
+	spider.on( "close", function( code ) {
+		process.stdout.write( "Spider completed in ~" +
+			new duration( startTime ).milliseconds + "ms \n" );
+		if ( callback ) {
+			callback( !!code );
+		}
 	});
 };
