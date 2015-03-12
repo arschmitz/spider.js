@@ -28,7 +28,7 @@ module.exports = function( options, callback ) {
 		process.stdout.write( "Spider completed in ~" +
 			new duration( startTime ).milliseconds + "ms \n" );
 		if ( callback ) {
-			callback( !!code );
+			callback( code );
 		}
 	});
 };
