@@ -16,6 +16,8 @@
 	"smarttabs": true,
 	"trailing": true,
 	"undef": true,
-	"node": true,
-	"unused": true
+	"unused": true,
+	"es3": true,
+	"strict": false,
+	"node": true
 }

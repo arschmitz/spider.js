@@ -10,4 +10,8 @@ args.forEach( function( value ) {
 	options[ arg[ 1 ] ] = arg[ 2 ];
 });
 
-spider( options );
+spider( options, function( statusCode ) {
+	process.exit( statusCode );
+} );
+
+
