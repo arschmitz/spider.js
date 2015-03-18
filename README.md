@@ -80,3 +80,9 @@ Type: `Boolean`
 Default value: `true`
 
 Wether or not to check script Errors
+
+#### linkOutputLimit
+Type: `Number`
+Default value: `10`
+
+The maximum number of pages to show per link. This helps to prevent excessive output when a link exists on every page of a site like in a header or footer.
