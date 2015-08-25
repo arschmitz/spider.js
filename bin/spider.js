@@ -1,4 +1,4 @@
-#!/usr/local/bin/node
+#!/usr/bin/env node
 
 var options = {},
 	args = process.argv.slice( 0 ),
