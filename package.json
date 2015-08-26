@@ -38,7 +38,7 @@
     "grunt-jscs": "0.6.2",
     "load-grunt-tasks": "3.1.0"
   },
-  "preferGlobal": "true",
+  "preferGlobal": true,
   "bin": {
     "spiderjs": "bin/spider.js"
   },
