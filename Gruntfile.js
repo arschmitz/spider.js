@@ -10,7 +10,7 @@ module.exports = function( grunt ) {
 	require( "load-grunt-tasks" )( grunt );
 
 	// Project configuration.
-	grunt.initConfig({
+	grunt.initConfig( {
 		jshint: {
 			all: [ "*.js" ],
 			options: {
@@ -22,9 +22,11 @@ module.exports = function( grunt ) {
 			all: [ "*.js" ]
 		}
 
-	});
+	} );
 
-	// By default, lint and run all tests.
-	grunt.registerTask( "default", [ "jshint", "jscs" ]);
+	grunt.registerTask( "test", [ "jshint", "jscs" ] );
+
+	// By default, run all tests.
+	grunt.registerTask( "default", [ "test" ] );
 
 };
